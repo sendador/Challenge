@@ -46,5 +46,12 @@ class Car:
         self._pax_count = value
 
 
-c = Car(4, 2000, 5)
+pax_count = int(
+    input("Number of passengers riding in the car (including the driver): "))
+car_mass = int(
+    input("Mass of the empty car (in kg): "))
+gear_count = int(
+    input("Number of gears:  "))
+
+c = Car(pax_count, car_mass, gear_count)
 print(c.total_mass())
